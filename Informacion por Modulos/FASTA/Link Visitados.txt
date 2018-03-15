@@ -1,0 +1,2 @@
+http://www.ncbi.nlm.nih.gov/BLAST/blastcgihelp.shtml
+http://www.virtual.unal.edu.co/cursos/ingenieria/2001832/lecciones/fasta.html

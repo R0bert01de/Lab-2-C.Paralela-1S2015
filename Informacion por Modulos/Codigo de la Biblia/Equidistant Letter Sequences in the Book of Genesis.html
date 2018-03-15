@@ -1,0 +1,1247 @@
+
+<!-- saved from url=(0047)http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   
+   <meta name="KeyWords" content="Genesis, Equidistant letter squences, Strings of letters,                   Cylindrical representations Statistical analysis">
+   <title>Equidistant Letter Sequences in the Book of Genesis</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<center>
+<hr width="100%"></center>
+
+<center>
+<h2>
+EQUIDISTANT LETTER SEQUENCES IN THE BOOK OF GENESIS: II. THE RELATION TO
+THE TEXT</h2></center>
+
+<center>
+<h5>
+Doron Witztum, Eliyahu Rips, and Yoav Rosenberg</h5></center>
+
+<p>
+ABSTRACT. It has been noted that when the Book of Genesis is written
+as two-dimensional arrays, equidistant letter sequences spelling words
+often appear in close proximity with portions of the text which have related
+meaning. Quantitative tools for measuring this phenomenon are developed.
+Randomization analysis is done for three samples. For one of them the effect
+is significant at the level of .000000004.
+
+</p><p><i>Key words and phrases.</i> Genesis, Equidistant letter sequences,
+Strings of letters, Cylindrical representations, Statistical analysis.
+
+</p><center>
+<hr width="100%"></center>
+
+<h3>
+<b>1. Introduction.</b></h3>
+There is an old Jewish tradition about a "hidden text" in the Hebrew Pentateuch
+(the Five Books of Moses), consisting of words or phrases expressed in
+the form of equidistant letter sequences (ELS's) -- that is by selecting
+sequences of equally spaced letters in the text. Since this tradition was
+passed orally, only few expressions that belong to the "hidden text" were
+preserved in writing (Rabbenu Bahya, 1492 and Cordovero, 1592); actually
+almost all the words and the syntax are unknown. Rabbi H.M.D. Weissmandel
+(Weissmandel, 1958) was the first to try to show the existence of such
+a "hidden text", by finding interesting patterns consisting of ELS's.
+
+<p>In a previous paper (Witztum <i>et al</i>, 1994), we developed a methodology
+for systematic and rigorous studies of the same nature; namely, for attempts
+to show objectively the existence of the"hidden text" in the Hebrew Pentaceuch.
+This methodology was applied to study the "hidden text" of the Book of
+Genesis.
+
+</p><p>The approach we have taken in our research can be illustrated by the
+following example. Suppose we have a text written in a foreign language
+that we do not understand. We are asked whether the text is meaningful
+(in that foreign language) or meaningless. Of course, it is very difficult
+to decide between these possibilities, since we do not understand the language.
+Suppose now that we are equipped with a very partial dictionary, which
+enables us to recognise a small portion of the words in the text: "hammer"
+here and "chair" there, and maybe even "umbrella" elsewhere. Can we now
+decide between the two possibilitities?
+
+</p><p>Not yet. But suppose now that, aided with the partial dictionary, we
+can recognise in the text a pair of conceptually related words, like "hammer"
+and "anvil". We check if there is a tendency of their appearances in the
+text to be in "close proximity". If the text is meaningless, we do not
+expect to see such a tendency, since there is no reason for it to occur.
+Next, we widen our check; we may identify some other pairs of conceptually
+related words: like "chair" and "table", or "rain" and "umbrella". Thus
+we have a sample of such pairs, and we check the tendency of each pair
+to appear in close proximity in the text. If the text is meaningless, there
+is no reason to expect such a tendency. However, a strong tendency of such
+pairs to appear in close proximity indicates that the text might be meaningful.
+
+</p><p>Note that even in an absolutely meaningful text we do not expect that,
+deterministically, every such pair will show such tendency. Note also,
+that we did not decode the foreign language of the text yet: we do not
+recognise its syntax and we cannot read the text.
+
+</p><p>In our research we consider the set of all ELS's spelling out words
+or phrases in the language of the text. The approach described in this
+example suggests the two following lines of investigation:
+
+</p><p>A) A study of the mutual location of ELS's spelling out conceptually
+related words or expressions.
+
+</p><p>B) A study of the mutual location of ELS's spelling out words or expressions
+with conceptually related portions of the text.
+
+</p><p>Suppose we are given a text, such as Genesis (<i>G</i>). Define an <i>ELS
+</i>(equidistant letter sequence) as a sequence of letters in the text
+whose positions, not counting spaces, form an arithmetic progression; that
+is, the letters are found at the positions
+</p><center><i>n, n+d, n+</i>2<i>d,..., n+(k-</i>1<i>)d.</i></center>
+
+<p>We call <i>d </i>the <i>skip,</i> <i>n </i>the <i>start</i>, and <i>k
+</i>the <i>length </i>of the ELS. These three parameters uniquely identify
+the ELS, which is denoted (<i>n, d, k</i>).
+
+</p><p>Let us write the text as a two-dimensional array -- i.e., on a single
+large page -- with rows of equal length, except perhaps for the last row.
+Usually, then, an ELS appears as a set of points on a straight line. The
+exceptional cases are those where the ELS "crosses" one of the vertical
+edges of the array and reappears on the opposite edge. To include these
+cases in our framework, we may think of the two vertical edges of the array
+as pasted together, with the end of the first line pasted to the beginning
+of the second, the end of the second to the beginning of the third, and
+so on. We thus get a cylinder on which the text spirals down in one long
+line.
+
+</p><p>It has been noted that when Genesis is written in this way, and the
+distance between ELS's is defined according to the ordinary two-dimensional
+Euclidean metric -- ELS's spelling words with related meaning often appear
+in close proximity. It has also been noted that ELS's spelling words often
+appear in close proximity with portions of the text which have related
+meaning.
+
+</p><p>Thus, our research focuses on two phenomena:
+</p><h4>
+<b>Phenomenon A</b></h4>
+The appearance of "noteworthy" ELS's spelling words with related meanings
+in close proximity, on two-dimensional arrays. (the "noteworthy" ELS's
+are those for which the skip |<i>d</i>| is minimal on the whole text, or
+on large parts of it; for short we call them <i>minimal </i>ELS's).
+
+<p>Our paper (Witztum <i>et al</i>., 1994) deals with Phenomenon A. There
+we developed a method for testing the significance of the phenomenon according
+to accepted statistical principles. After making certain choices of words
+to compare and ways to measure proximity, we performed a randomization
+test and obtained a very small p-value, i.e. we found the results highly
+statisically significant.
+</p><h4>
+<b>Phenomenon B</b></h4>
+The appearance of minimal ELS's spelling words in close proximity, on two-dimensional
+arrays, with conceptually related words or expressions appearing in the
+string of letters of the text: i.e. with skip&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/plus1.gif" height="10" width="11" align="BOTTOM">1.
+<h4>
+Example</h4>
+On <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/figures.html#figure1">Figure 1</a> we see a pair of words:
+the word&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/prat.gif" height="9" width="45" align="BOTTOM"> (private)
+appearing as an ELS (with skip 855) with the word&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names) appearing in the text (Gn 26:18).
+
+<p>Each ELS determines a series of tables with row lengths <i>h</i>= <i>h</i><sub>1</sub>,
+<i>h</i><sub>2</sub>,..., where <i>h</i><sub>i</sub> is the integer nearest
+to |<i>d</i>|/<i>i</i> (1/2 is rounded up).
+
+</p><p>The rows in our table has 428 letters (only 21 of them are shown in
+Figure 1). The number 428 is the nearest integer to 855/2, so the word&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/prat.gif" height="9" width="45" align="BOTTOM">
+(private) appears every second row.
+
+</p><p>The table is determined by this ELS of the word&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/prat.gif" height="9" width="45" align="BOTTOM">
+(private), which is minimal in a section of the text comprising 76% of
+<i>G</i>. The word&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names) appears in the text of <i>G</i> seven times as SL's. Note that <i>G</i>
+contains 78,064 letters.
+More examples are given in <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.3.1">Appendix A.3.1</a>.
+
+</p><p>The measuring scheme for Phenomenon A (see Witztum <i>et al</i>., 1994)
+is applicable, with minor changes, to study Phenomenon B.
+
+</p><p>In this paper we make certain choices of words to compare and perform
+similar randomization tests. We obtain very small p-values; that is, we
+find that the results are highly statistically significant.
+</p><h3>
+2. Outline of the Procedure.</h3>
+In this section we describe the test in outline. In an appendix,
+sufficient details are provided to enable the reader to repeat the computations
+precisely, and so to verify their correctness.
+
+<p>We test the significance of the phenomenon on samples of pairs of related
+words. To do this we must do the following:
+</p><ol type="i">
+<li>
+define the notion of "distance" between any two words, so as to lend meaning
+to the idea of words in "close proximity";</li>
+
+<li>
+define statistics that express how close, "on the whole," the words making
+up the sample pairs are to each other (some kind of average over the whole
+sample);</li>
+
+<li>
+choose a sample of pairs of related words on which to run the test; and</li>
+
+<li>
+determine whether the statistics defined in (ii) are "unusually small"
+for the chosen sample.</li>
+</ol>
+Notice that the procedure here described is identical to that used in (Witztum
+<i>et al</i>., 1994), except for minor changes in the details of task (i),
+due to fact that here we consider "distance" between an ELS and a word
+in the string of letters (SL) of the text, and not a "distance" between
+two ELS's (as in Witztum <i>et al</i>., 1994).
+
+<p>Task (i) has several components. First, we must define the notion of
+"distance" between an ELS and an SL of the text in a given array; for this
+we use a convenient variant of the ordinary Euclidean distance. Second,
+there are many ways of writing a text as a two-dimenional array, depending
+on the row length; we must select one or more of these arrays, and somehow
+amalgamate the results (of course, the selection and/or amalgamation must
+be carried out according to clearly stated, systematic rules). Third, a
+given word may occur many times as an ELS in a text; here again, a selection
+and amalgamation process is called for. Fourth, we must correct for factors
+such as word length and composition. All this is done in detail in Sections
+<a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.1">A.1</a> and <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.2">A.2</a>
+of the Appendix.
+
+</p><p>Next, we have task (ii), measuring the overall proximity of pairs of
+words in the sample as a whole. For this, we used two different statistics,
+<i>P</i><sub>1</sub> and <i>P</i><sub>2</sub>, which are defined and motivated
+in the Appendix (Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.6">A.6</a>). Intuitively,
+each measures overall proximity in a different way. In each case, a small
+value of <i>P<sub>i</sub></i> indicates that the words in the sample pairs
+are, on the whole, close to each other.
+
+</p><p>To accomplish task (iii) we composed three samples (<b><a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#B1">Sample
+B1</a></b>, <b><a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#B2">Sample B2</a></b> and <b><a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#B3">Sample
+B3</a></b>) of pairs of expressions (<i>w, w'</i>), where <i>w'</i>s are
+words appearing as ELS's, and <i>w' '</i>s are words appearing as SL's
+(i.e. with <i>d'</i> =<img src="./Equidistant Letter Sequences in the Book of Genesis_files/plus1.gif" height="10" width="11" align="BOTTOM">1).
+
+</p><p>Preliminary test was done for each sample, in order to check how the
+<i>subject</i> of the sample appears as ELS's and SL's in <i>Genesis</i>,
+and consequently to decide whether to test the sample itself. For details
+see Appendix, Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.3.1">A.3.1</a>.
+
+</p><p><a name="B1"></a><b>Sample B1</b> is built on the basis of the Hebrew
+alphabet. For every letter <i>'x'</i> of the Hebrew alphabet we consider
+pairs (<i>w,w'</i>), where <i>w'</i> 's are found as SL's and have the
+meaning "a name beginning with <i>'x' </i>" or "names beginning with <i>'x'
+</i>", while <i>w'</i>s are names beginning with <i>'x'</i> taken from
+"A Treasury of Men`s Names" (which is included as an appendix in Even-Shoshan's
+famous Hebrew dictionary (Even-Shoshan, 1989). For a detailed definition
+of the <b>Sample B1</b> see Appendix (Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.3.2">A.3.2</a>).
+
+</p><p><a name="B2"></a><b>Sample B2</b> is built exactly in the same way as
+Sample B1, except for the fact that the names are taken from "A Treasury
+of Women's Names" from the same dictionary.
+
+</p><p><a name="B3"></a><b>Sample B3</b> is built on the basis of the list
+of the seventy descendents of Noah's sons: the Semites, the Hamites, and
+the Japhetites, found in <i>Genesis </i>Chapter 10. Jewish tradition teaches,
+that these seventy descendents became the Seventy Nations which constitute
+Humanity. This concept is well known, and is usually found in biblical
+Encyclopaedias under the title "The Table of Nations" (see for instance
+<i>Encyclopedia Biblica,</i> 1962). <b>Sample B3</b> consists of pairs
+(<i>w,</i> <i>w'</i>) where <i>w' '</i>s are names from this list, and
+<i>w</i>`s are expressions from a fixed set of expressions describing basic
+aspects of nationality (such as name, country, language etc.) For details
+see Appendix, Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.3.3">A.3.3</a> and
+<a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table8">Table
+8</a>.
+
+</p><p>Finally, we come to Task (iv), the significant test itself. We apply
+the same procedure for all three samples. For <b>Sample B3</b> we describe
+it here: for the other two samples the (similar) details are given in Appendix
+<a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.4">A.4</a>.
+
+</p><p>The list of Seventy Nations consists of 68 <i>different</i> names (in
+two cases nations have the same name). For each of the 68! permutations&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM">
+of these names, we define the statistic&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/p1.gif" height="14" width="23" align="ABSBOTTOM">obtained
+by permuting the names in accordance with&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM">,
+so that Name <i>i</i> is matched with the set of expressions defined for
+Name&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM">(<i>i</i>).
+The 68! numbers&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/p1.gif" height="14" width="23" align="ABSBOTTOM">
+are ordered, with possible ties, according to the usual order of the real
+numbers. If the phenomenon under study were due to chance, it would be
+just as likely that <i>P</i><sub>1</sub> occupies any one of the 68! places
+in this order as any other. Similarly for <i>P</i><sub>2</sub>. This is
+our null hypothesis.
+
+</p><p>To calculate significance levels, we chose 999,999 random
+permutations&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM">
+of the 68 names; the precise way in which this was done is explained in
+the Appendix (Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.7">A.7</a>). Each of these
+permutations&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM"> determines
+a statistic&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/p1.gif" height="14" width="23" align="ABSBOTTOM"> 
+together
+with <i>P</i><sub>1</sub>, we have thus 1,000,000 numbers. Define the <i>rank
+order</i> of <i>P</i><sub>1</sub>, among these 1,000,000 numbers as the
+number of&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/p1.gif" height="14" width="23" align="ABSBOTTOM"> not
+exceeding <i>P</i><sub>1</sub>; if <i>P</i><sub>1</sub> is tied with
+other&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/p1.gif" height="14" width="23" align="ABSBOTTOM">,
+half of these others are considered to "exceed" P<sub>1</sub>.
+Let&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sub1.gif" height="16" width="19" align="ABSCENTER">
+be the rank order of <i>P</i><sub>1</sub>, divided by 1,000,000; under
+the null
+hypothesis,&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sub1.gif" height="16" width="19" align="ABSCENTER">
+is the probability that <i>P</i><sub>1</sub> would rank as low as it does.
+Define&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sub2.gif" height="16" width="21" align="ABSCENTER"> similarly
+(using the same 999,999 permutations in each case).
+
+</p><p>For <b>Sample B3</b> we performed an additional test with 999,999,999
+random permutations. In this case only statistic&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/p2.gif" height="14" width="20" align="ABSBOTTOM">
+was calculated. The time needed for the computation of&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/p1.gif" height="14" width="23" align="ABSBOTTOM"> for
+999,999,999 random permutations is at present not within the reach of our
+possibilties.
+
+</p><p>After calculating the probabilities&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sub1.gif" height="16" width="19" align="ABSCENTER">
+and&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sub2.gif" height="16" width="21" align="ABSCENTER">, we must
+make an overall decision, for each sample, to accept or reject the null
+hypothesis. Thus the overall significance level (or p-value) for each sample,
+using the two statistics. is&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sub.gif" height="16" width="18" align="ABSCENTER"> :=
+2 min <img src="./Equidistant Letter Sequences in the Book of Genesis_files/subi.gif" height="16" width="19" align="ABSCENTER">.
+</p><h3>
+3. Results and Conclusions.</h3>
+In Tables <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html">1</a>, <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table2">2</a>
+and <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table3">3</a> we present the results for the three
+samples. <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html">Table 1</a> shows the results for <b>Sample
+B1</b>. There we list the rank order of <i>P</i><sub>1</sub> and <i>P</i><sub>2</sub>
+among the 1,000,000 corresponding&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/p1.gif" height="14" width="23" align="ABSBOTTOM"> and&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/p2.gif" height="14" width="20" align="ABSBOTTOM">.
+Thus the entry 1139 for <i>P</i><sub>2</sub> means that for 1138 out of
+the 999,999 random permutations&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM">,
+the statistic&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/p2.gif" height="14" width="20" align="ABSBOTTOM">was
+smaller than <i>P</i><sub>2</sub>. It follows that
+min&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/subi.gif" height="16" width="19" align="ABSCENTER"> = .000442,
+so&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sub.gif" height="16" width="18" align="ABSCENTER">
+= 2 min&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/subi.gif" height="16" width="19" align="ABSCENTER"> =
+.000884.
+
+<p>We conclude that for <b>Sample B1</b> the null hypothesis is rejected
+with significance level (p-value) .000884.
+
+</p><p>The same calculations, using the same 999,999 random permutations, were
+performed for a control text <i>V</i> (see Witztum <i>et al.,</i> 1994).
+The text <i>V </i>was obtained from <i>G </i>by permuting the verses of
+<i>G </i>randomly. (For details, see Appendix; Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.7">A.7</a>).
+
+</p><p><a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html">Table 1</a> gives the results of these calculations
+too. In the case of <i>V</i>, min
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/subi.gif" height="16" width="19" align="ABSCENTER">
+is approximately .169, being non-significant.
+
+</p><p><a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html">Table 2</a> shows the results for <b>Sample B2</b>
+for <i>G</i>. The results are non-significant. We saw no reason to perform
+any further tests for this sample.
+
+</p><p><a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html">Table 3</a> shows the results for <b>Sample B3</b>.
+In part A of it, the results for <i>G</i>, as well for the control text
+<i>V </i>for 999,999 random permutations are summarized. In the case of
+<i>V,</i>
+min <img src="./Equidistant Letter Sequences in the Book of Genesis_files/subi.gif" height="16" width="19" align="ABSCENTER">
+is approximately .559.
+
+</p><p>In part B, the results for <i>G </i>for 999,999,999 random permutations
+are given. Notice that only the rank order of <i>P</i><sub>2</sub> was
+calculated. It turned out to be 4.
+
+</p><p>We conclude that for Sample B3 the null hypothesis is rejected with
+significance level (p-value) .000000004.
+
+</p><h2> APPENDIX: Details of the Procedure.</h2>
+
+In this Appendix we describe the procedure in sufficient detail to enable
+the reader to repeat the computations precisely. Some motivation for the
+various definitions is also provided.
+
+<p>In Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.1">A.1</a> of this Appendix, a "raw" measure
+of distance between words is defined. Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.2">A.2</a> explains
+how we normalize this raw measure to correct for factors like the length
+of a word and its composition (the relative frequency of the letters occurring
+in it). Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.3">A.3</a> explains how the three samples B1,
+B2 and B3 are constructed. Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.5">A.5</a> identifies the
+precise text, of Genesis that we used. In Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.6">A.6</a>,
+we define and motivate the statistics <i>P</i><sub>1</sub> and <i>P</i><sub>2</sub>.
+The details of the task (iv) are described in Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.4">A.4</a>.
+Finally, Section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.7">A.7</a> provides the details of the randomization.
+</p><h5>
+<a name="A.1"></a>A.1 The Distance Between Words.</h5>
+To define the "distance" between words, we must first define the distance
+between an ELS representing a word and a string of letters (SL) in the
+text, (i.e. with <i>d</i> =&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/plus1.gif" height="10" width="11" align="BOTTOM">1)
+representing the other word. Before we can do that, we must define the
+distance between ELS and SL in a given array: and before we can do that,
+we must define the distance between individual letters in the array.
+
+<p>As indicated in Section 1, we think of an array as one long line that
+spirals down on a cylinder; its <i>row length h</i> is the number of vertical
+columns. To define the distance between two letters <i>x </i>and <i>x'</i>,
+cut the cylinder along a vertical line between two columns. In the resulting
+plane each of <i>x</i> and <i>x'</i> have two integer coordinates. and
+we compute the distance between them as usual, using these coordinates.
+In general, there are two possible values for this distance, depending
+on the vertical line that was chosen for cutting the cylinder; if the two
+values are different, we use the smaller one.
+
+</p><p>Next, we define the distance between fixed ELS <i>e</i> and SL <i>e'</i>
+in a fixed cylindrical array. Set
+</p><ul><i>f</i> := the distance between consecutive letters of <i>e,</i>
+
+<p><i>f '</i> := the distance between consecutive letters of <i>e' </i>=
+1.
+
+</p><p><i>l</i> := the minimal distance between a letter of <i>e</i> and one
+of <i>e'</i>,</p></ul>
+and define&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/d.gif" height="12" width="9" align="BOTTOM">(<i>e,
+e'</i>) := <i>f</i><sup>2</sup> + <i>f'</i><sup>2</sup>+<i>l</i><sup>2</sup>+1.
+We call&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/d.gif" height="12" width="9" align="BOTTOM">(<i>e, e'</i>)
+the <i>distance</i> between the ELS <i>e </i>and the SL <i>e'</i> in the
+given array; it is small if both fit into a relatively compact area.
+
+<p>Now there are many ways of writing Genesis as a cylindrical array, depending
+on the row length <i>h</i>. Denote by&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/d.gif" height="12" width="9" align="BOTTOM"><i><sub>h</sub></i>(<i>e,
+e'</i>) the distance&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/d.gif" height="12" width="9" align="BOTTOM">(<i>e,
+e'</i>) in the array determined by <i>h</i>, and set&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/u.gif" height="12" width="12" align="ABSCENTER"><i><sub>h</sub></i>(<i>e,
+e'</i>) := 1/<img src="./Equidistant Letter Sequences in the Book of Genesis_files/d.gif" height="12" width="9" align="BOTTOM"><i><sub>h</sub></i>(<i>e,
+e'</i>); the larger&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/u.gif" height="12" width="12" align="ABSCENTER"><i><sub>h</sub></i>(<i>e,
+e'</i>) is, the more compact is the configuration consisting of <i>e </i>and
+<i>e'</i> in the array with row length <i>h</i>. Set <i>e</i> = (<i>n,
+d, k</i>) (recall that <i>d </i>is the skip). Of particular interest are
+the row lengths <i>h</i> = <i>h</i><sub>1</sub>, <i>h</i><sub>2</sub>,....
+where <i>h<sub>i</sub></i> is the integer nearest to |<i>d</i>| /<i>i</i>
+(1/2 is rounded up). Thus when <i>h</i> = <i>h</i><sub>1</sub> = |d|, then
+<i>e </i>appears as a column of adjacent letters and when <i>h</i> = <i>h</i><sub>2</sub>,
+then <i>e</i> appears either as a column that skips alternate rows or as
+a straight line of knight's moves. In general, the arrays in which <i>e
+</i>appears relatively compactly are those with row length <i>h<sub>i</sub></i>
+with <i>i</i> "not too large."
+
+</p><p>The above discussion indicates that if there is an array in which the
+configuration (<i>e,e'</i>) is unusually compact, it is likely to be among
+those whose row length is one of the first ten <i>h<sub>i</sub></i>. (Here
+and in the sequel 10 is an arbitrarily selected "moderate" number). So
+setting
+</p><center><img src="./Equidistant Letter Sequences in the Book of Genesis_files/eq1.gif" height="44" width="145"></center>
+
+
+<p>we conclude that&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/o.gif" height="7" width="11" align="BOTTOM">(<i>e,
+e'</i>) is a reasonable measure of the maximal "compactness" of the configuration
+(<i>e, e'</i>) in any array. Equivalently, it is an inverse measure of
+the minimum distance between <i>e </i>and <i>e'</i>.
+
+</p><p>Next, given a word <i>w</i>, we look for the most "noteworthy" occurrence
+or occurrences of <i>w </i>as an ELS in <i>G</i>. For this, we chose ELS's
+<i>e</i> = (<i>n,d,k</i>) with |<i>d</i>|&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/great.gif" height="13" width="10" align="BOTTOM">
+2 that spell out <i>w </i>for which |<i>d</i>| is minimal over all of <i>G</i>,
+or at least over large portions of it. Specifically, define the <i>domain
+of minimality</i> of <i>e </i>as the maximal segment <i>T<sub>e</sub></i>
+of <i>G </i>that includes <i>e </i>and does not include any other ELS&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ebar.gif" height="18" width="69" align="BOTTOM">
+for <i>w</i> with |<img src="./Equidistant Letter Sequences in the Book of Genesis_files/dbar.gif" height="14" width="13">|&lt; |<i>d</i>|.
+The length of <i>T<sub>e</sub></i>, relative to the whole of <i>G</i>,
+is the "weight" we assign to <i>e</i>. Thus we define&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/w.gif" height="8" width="13" align="BOTTOM">(<i>e</i>)
+:=&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/gimmel.gif" height="16" width="10" align="BOTTOM">(<i>T<sub>e</sub></i>)/<img src="./Equidistant Letter Sequences in the Book of Genesis_files/gimmel.gif" height="16" width="10" align="BOTTOM">(<i>G</i>),
+where&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/gimmel.gif" height="16" width="10" align="BOTTOM">(<i>T<sub>e</sub></i>)
+is the length of <i>T<sub>e</sub></i>, and&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/gimmel.gif" height="16" width="10" align="BOTTOM">(<i>G</i>)
+is the length of <i>G</i>. For any two words <i>w</i> and <i>w',</i> we set
+</p><center><img src="./Equidistant Letter Sequences in the Book of Genesis_files/eq2.gif" height="32" width="252"></center>
+
+
+<p>where the sum is over all ELS's <i>e </i>spelling out <i>w </i>and over
+all SL's <i>e</i>' spelling out <i>w'</i>. Roughly,&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,
+w'</i>) measures the maximum closeness of the more noteworthy appearances
+of <i>w </i>as ELS's and <i>w'</i> as SL's in Genesis--the closer they
+are, the larger is&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,
+w'</i>).
+
+</p><p>When actually computing&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,
+w'</i>), the size of the list of ELS's for <i>w </i>may be impractically
+large (especially for short words). It is clear from the definition of
+the domain of minimality that ELS's for <i>w </i>with relatively large
+skips will contribute very little to the value of&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,w'</i>)
+due to their small weight. Hence, in order to cut the amount of computation
+we restrict beforehand the range of the skip |<i>d</i>|<img src="./Equidistant Letter Sequences in the Book of Genesis_files/less.gif" height="13" width="10" align="BOTTOM"><i>D</i>(<i>w</i>)
+for <i>w </i>so that the expected number of ELS's for <i>w</i> will be
+10. This expected number equals the product of the relative frequencies
+(within Genesis) of the letters constituting <i>w </i>multiplied by the
+total number of all equidistant letter sequences with 2&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/less.gif" height="13" width="10" align="BOTTOM">|<i>d</i>|<img src="./Equidistant Letter Sequences in the Book of Genesis_files/less.gif" height="13" width="10" align="BOTTOM">
+<i>D</i>. (The latter is given by the formula (<i>D </i>- 1)(2<i>L</i>
+- (<i>k</i> - 1)(<i>D</i> + 2)), where <i>L</i> is the length of the text
+and <i>k</i> is the number of letters in <i>w</i>). Abusing our notation
+somewhat, we continue to denote this modified function by&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,w'</i>).
+</p><h5>
+<a name="A.2"></a>A.2 The Corrected Distance.</h5>
+In the previous section we defined a measure&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,
+w'</i>) of proximity between two words <i>w </i>and <i>w'</i> -- an inverse
+measure of the distance between them. We are, however, interested less
+in the absolute distance between two words, than in whether this distance
+is larger or smaller than "expected". In this section, we define a "relative
+distance" <i>c</i>(<i>w, w'</i>), which is small when <i>w </i>is "unusually
+close" to <i>w',</i> and is 1, or almost 1, when <i>w </i>is "unusually
+far" from <i>w'</i>.
+
+<p>The idea is to use perturbations of the arithmetic progressions that
+define the notion of an ELS. Specifically, start by fixing a triple (<i>x,y,z</i>)
+of integers in the range {-<i>r</i>,...,0,...,<i>r</i>}; there are (2<i>r
+</i>+ 1)<sup>3 </sup>such triples. In Witztum <i>et al</i>. (1994) and
+also here we put <i>r </i>= 2. which gives us 125 triples. Next, rather
+than looking for ordinary ELS's (<i>n,d,k</i>), look for "(<i>x,y,z</i>)-perturbed
+ELS's" (<i>n,d,k</i>)<sup>(<i>x,y,z</i>)</sup> obtained by taking the positions
+</p><center><i>n, n + d,...,n + </i>(<i>k - </i>4)<i>d, n + </i>(<i>k - </i>3)<i>d
++ x, n + </i>(<i>k - </i>2)<i>d + x + y, n + </i>(<i>k - </i>1)<i>d + x
++ y + z,</i></center>
+
+
+<p>instead of the positions <i>n, n + d, n +2d,...,n +(k - </i>1<i>)d</i>.
+Note that in a word of length <i>k, k-</i>2 intervals could be perturbed.
+However, we preferred to perturb only the 3 last ones, for technical programming
+reasons.
+
+</p><p>The <i>distance </i>between the (<i>x,y,z</i>)-peturbed ELS (<i>n, d,
+k)</i><sup>(<i>x,y,z</i>)</sup> and the SL (<i>n'</i>,&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/plus1.gif" height="10" width="11" align="BOTTOM">1,<i>k'</i>)
+is defined by the same formulae as in the non-perturbed case, where <i>f</i>
+is taken to be the distance between the first two letters of (<i>x,y,z</i>)-perturbed
+<i>e</i>.
+
+</p><p>We may now calculate the "(<i>x,y,z</i>)-proximity" of two words <i>w
+</i>and <i>w'</i> in a manner exactly analogous to that used for calculating
+the "ordinary" proximity&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,
+w'</i>). This yields 125 numbers&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM"><sup>(<i>x,y,z</i>)</sup>(<i>w,
+w'</i>), of which&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,w'</i>)=<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM"><sup>(0,0,0)</sup>(<i>w,w'</i>)
+is one. We are interested in only some of these 125 numbers; namely, those
+corresponding to triples (<i>x,y,z</i>) for which there actually exist
+some (<i>x,y,z</i>)-perturbed ELS's in Genesis for <i>w </i>(the other&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM"><sup>(<i>x,y,z</i>)</sup>(<i>w,w'</i>)
+vanish). Denote by <i>M</i>(<i>w, w'</i>) the set of all such triples,
+and by <i>m</i>(<i>w, w'</i>) the number of its elements.
+
+</p><p>Suppose (0,0,0) is in <i>M</i>(<i>w, w'</i>), i.e., <i>w</i> actually
+appears as ordinary ELS (i.e., with <i>x = y = z = </i>0) in the text.
+Denote by <i>v</i>(<i>w,w'</i>) the number of triples (<i>x,y,z</i>) in
+<i>M</i>(<i>w,w'</i>) for which&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM"><sup>(<i>x,y,z</i>)</sup>(<i>w,w'</i>)<img src="./Equidistant Letter Sequences in the Book of Genesis_files/great.gif" height="13" width="10" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,w'</i>).
+If <i>m</i>(<i>w,w'</i>)<img src="./Equidistant Letter Sequences in the Book of Genesis_files/great.gif" height="13" width="10" align="BOTTOM"> 10
+(again, 10 is an arbitrarily selected "moderate" number),
+</p><center><i>c</i>(<i>w,w'</i>) :=<i>v</i>(<i>w,w'</i>)/<i>m</i>(<i>w,w'</i>).</center>
+
+
+<p>If (0, 0,0) is not in <i>M</i>(<i>w, w'</i>), or if <i>m</i>(<i>w, w'</i>)
+&lt; 10 (in which case we consider the accuracy of the method as insufficient),
+we do not define <i>c</i>(<i>w,w'</i>).
+
+</p><p>In words, the corrected distance <i>c</i>(<i>w,w'</i>) is simply the
+rank order of the proximity&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,w'</i>)
+among all the "perturbed proximities"&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM"><sup>(<i>x,y,z</i>)</sup>(<i>w,w'</i>);
+if&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,w'</i>)
+is tied with other&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM"><sup>(<i>x,y,z</i>)</sup>(<i>w,w'</i>),
+half of these others are considered to "exceed"&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/epsilon.gif" height="10" width="14" align="BOTTOM">(<i>w,w'</i>).
+We normalize it so that the maximum distance is 1. A large corrected distance
+means that ELS's representing <i>w</i> are far away from the SL's representing
+<i>w'</i>, on a scale determined by how far the <i>perturbed </i>ELS's
+for <i>w </i>are from the SL's for <i>w'</i>.
+</p><h5>
+<a name="A.3"></a>A.3 The Samples of Word Pairs.</h5>
+In this Section we describe the three samples that were tested in this
+research. Each of them consists of pairs of expressions (<i>w,w'</i>),
+where according to our procedure, we are looking for <i>w</i> to appear
+as ELS's and for <i>w'</i> to appear as SL's.
+
+<p>Our method of rank ordering of ELS's based on (<i>x,y,z</i>)-perturbations
+requires that words have at least 5 letters to apply the perturbations.
+In addition, we found that for words with more than 8 letters, the number
+of (<i>x,y,z</i>)-perturbed ELS's which actually exist for such words was
+too small to satisfy our criteria for applying the corrected distance.
+Thus the words in our list are restricted in length to the range 5-8, exactly
+as in Witztum <i>et al</i>. (1994). However. there is no restriction on
+the words or expressions appearing as SL's.
+
+</p><p><a name="A.3.1"></a><i>A.3.1 Preliminary Tests.</i>
+<br>Sample B1 deals with men's names. Appendix B in Even-Shoshan's Hebrew
+dictionary (Even-Shoshan. 1989) is "A Treasury of Private Names". It is
+divided into two parts: "A Treasury of Men's Names" and "A Treasury of
+Women's Names". Originally, we intented to check a sample based on the
+(much bigger) Treasury of men's names. The Treasury contains names from
+the Hebrew Bible and from various periods of the Hebrew language. We decided
+to include in our sample only names taken from the Hebrew Bible (they are
+indicated as such in this Treasury). These are original Hebrew names, or
+names which are etymologically Semitic or Hebrew. (See the foreword to
+the Treasury).
+
+</p><p>We describe the <i>subject </i>of the sample by the following set of
+pairs of expressions:
+</p><ol>
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/prat.gif" height="9" width="45" align="BOTTOM"> (private)
+-&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shem.gif" height="10" width="42" align="BOTTOM"> (Semitic)
+-&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ivriim.gif" height="10" width="47" align="BOTTOM"> (Hebrew)
+-&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/mkoriim.gif" height="11" width="52" align="ABSBOTTOM"> (original)
+-&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names).</li>
+</ol>
+The Hebrew term for "The Hebrew Bible" is either&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/mikrah.gif" height="11" width="37" align="ABSBOTTOM"> (Mikra)
+or&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/tanach.gif" height="11" width="34" align="ABSBOTTOM"> (Tanach).
+We used both:
+<ol start="5">
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/mikrah.gif" height="11" width="37" align="ABSBOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/min.gif" height="11" width="17" align="ABSBOTTOM">
+(from the Hebrew Bible) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/tanach.gif" height="11" width="34" align="ABSBOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/min.gif" height="11" width="17" align="ABSBOTTOM">
+(from the Hebrew Bible) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names).</li>
+</ol>
+Then we describe the fact that we deal with men's names, by the following
+pairs:
+<ol type="a">
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/anashim.gif" height="10" width="40" align="BOTTOM"> (of men)
+-&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/anashim.gif" height="10" width="40" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">
+(of the men) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/anashim.gif" height="10" width="40" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/la.gif" height="11" width="9" align="BOTTOM">
+(for men) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names)</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/anashim.gif" height="10" width="40" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shel.gif" height="11" width="22" align="BOTTOM">
+(of men) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/anashim.gif" height="10" width="40" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shel.gif" height="11" width="22" align="BOTTOM">
+(of the men) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names).</li>
+</ol>
+The first pair is shown above in <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/figures.html#figure1">Fig. 1</a>
+(in the
+Introduction). There, a minimal ELS for the word&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/prat.gif" height="9" width="45" align="BOTTOM"> (private)
+appears in close proximity with an appearance of the word&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35"> (names)
+as a SL. We <i>mark this appearance</i> of&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM"> (names),
+and check how close, each of the other expressions in the pairs 2) to 6)
+and a) to e) - appearing as a minimal ELS - "hits" at it. For example,
+this appearance of&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM"> 
+(names),
+is shown in <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/figures.html#figure2">Fig. 2</a>: this table is determined
+by an ELS for&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/mkoriim.gif" height="11" width="52" align="ABSBOTTOM">
+(original),
+which is minimal in a section of the text comprising 86% of <i>G</i>.
+
+<p><a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table4">Tables 4A and 4B</a>
+give the values of <i>c</i>(<i>w,w'</i>) for each pair
+from the above lists (where <i>w'</i> is&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM"> (names),
+and <i>w</i> is the corresponding expression). Recall that <i>c</i>(<i>w,
+w'</i>) is defined only when <i>w </i>appears as an ELS, and that <i>w
+</i>is restricted in length to the range 5-8.
+
+</p><p>The total for the 11 pairs is: <i>P</i><sub>1</sub> = 0.0000042, <i>P</i><sub>2</sub>
+= 0.000397 (for the definition of <i>P</i><sub>1</sub> and <i>P</i><sub>2</sub>
+see section <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.6">A.6</a>).
+
+</p><p>A randomization test that fits for this type of samples, where the same
+word is "paired" with a list of expressions, is the subject of our next
+paper.
+
+</p><p>Sample B2 deals with women's names. We describe this fact exactly as
+we had done with men's names; i.e. by the following pairs:
+</p><ol type="a">
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/nashim.gif" height="10" width="31" align="BOTTOM"> (of women)
+-&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/nashim.gif" height="10" width="31" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">
+(of the women) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/nashim.gif" height="10" width="31" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/la.gif" height="11" width="9" align="BOTTOM">
+(for women)-&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/nashim.gif" height="10" width="31" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shel.gif" height="11" width="22" align="BOTTOM"> (of
+women) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM"> (names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/nashim.gif" height="10" width="31" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shel.gif" height="11" width="22" align="BOTTOM">
+(of the women) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names).</li>
+</ol>
+Here too, the word&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">(names)
+is in the <i>above mentioned</i> appearance as SL.
+
+<p><a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table5">Table 5</a> gives the values of <i>c</i>(<i>w,w'</i>)
+for each pair from the above list (where <i>w'</i> is&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">(names),
+and <i>w</i>, is the corresponding expression).
+
+</p><p>To do a preliminary test for Sample B3, we proceed in a similar way
+and check the following expressions with the same appearance of&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">(names)
+as above:
+</p><ol type="a">
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM">
+(of nations) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">
+(of the nations) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/la.gif" height="11" width="9" align="BOTTOM">
+(for nations) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names):</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shel.gif" height="11" width="22" align="BOTTOM"> (of
+nations) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shel.gif" height="11" width="22" align="BOTTOM"> (of
+the nations) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names).</li>
+</ol>
+We checked more specifically the subject of Sample B3:
+the title&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM">
+"The Seventy Nations" can be also written as&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM"> (using
+the well-known numerical value of the Hebrew letters.&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM">=
+70). The alternative title in use is&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM"> ("The
+Seventy Descendants of Noah" ). Notice that in Hebrew&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM"> means
+both the sons and the descendants of Noah.) This expression can be also
+written as&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM">,
+where again&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM">
+stands for 70.
+Thus we have the pairs:
+<ol start="6" type="a">
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM">
+(the Seventy Nations) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM">
+(The Seventy Nations) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM"> (The
+Seventy Descendants of Noah) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM"> (names),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM"> (The
+Seventy Descendants of Noah) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names).</li>
+</ol>
+<a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table6">Table 6</a> gives the values of <i>c</i>(<i>w,
+w'</i>) for each pair from the above list (where <i>w'</i> is&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">(names),
+and <i>w</i> is the corresponding expression). The total for the 9 pairs
+is: <i>P</i><sub>1</sub> = 0.0170, <i>P</i><sub>2</sub> = 0.0154.
+
+<p>Seeing these results as encouraging, we proceed to check even more closely
+the subject of Sample B3.
+
+</p><p>The expression&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM"> (the
+descendants of Noah) exists in G as SL's five times. So we can look directly
+for meetings between this expression and the word <img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM">
+(seventy) as ELS's:
+</p><ol>
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM"> (seventy) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah)</li>
+</ol>
+In <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/figures.html#figure3">Fig. 3</a> we see the best meeting of
+these expressions. This table is determined by an ELS for the
+word&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM"> (seventy)
+with skip 28. We mark <i>this appearance</i> of&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM"> (the
+descendants of Noah), and check how close, each of the other expressions
+in the following pairs - appearing as a minimal ELS- "hits" it.
+<ol start="2">
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">
+(the nations) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants
+of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM">
+(The Seventy Nations) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM"> (The
+Seventy Nations) -<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM"> (the descendants
+of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM"> (The
+Seventy Descendants of Noah) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM">
+(The Seventy Descendants of Noah) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/m.gif" height="10" width="10" align="BOTTOM">
+(some of the descendants of Noah) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneibanv.gif" height="11" width="47" align="BOTTOM"> (his descendants)
+-&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah).</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneibanv.gif" height="11" width="47" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM"> (the
+seventy descendants of him) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneibanv.gif" height="11" width="47" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM"> (the
+seventy descendants of him) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneibanv.gif" height="11" width="47" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/m.gif" height="10" width="10" align="BOTTOM">
+(some of his descendants) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/tzetza.gif" height="10" width="45" align="BOTTOM"> (his descendants)
+-&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/tzetza.gif" height="10" width="45" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM">
+(the seventy descendants of him) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/tzetza.gif" height="10" width="45" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM"> (the
+seventy descendants of him) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah),</li>
+
+<li>
+<img src="./Equidistant Letter Sequences in the Book of Genesis_files/tzetza.gif" height="10" width="45" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/m.gif" height="10" width="10" align="BOTTOM">
+(some of his descendants) -&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah).</li>
+</ol>
+The expressions&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneibanv.gif" height="11" width="47" align="BOTTOM"> and&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/tzetza.gif" height="10" width="45" align="BOTTOM">
+also mean descendants: and&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/m.gif" height="10" width="10" align="BOTTOM">(some
+of descendants of Noah),&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneibanv.gif" height="11" width="47" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/m.gif" height="10" width="10" align="BOTTOM">(some
+of his descendants) and&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/tzetza.gif" height="10" width="45" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/m.gif" height="10" width="10" align="BOTTOM">(some
+of his descendants) express the fact that not all of his descendants became
+nations.
+
+<p>In <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/figures.html#figure4">Fig. 4</a>
+we see the pairs 1), 2) and 5) appearing
+together. This table is determined by an ELS for&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM">
+(The
+Seventy Descendants of Noah) with skip -100, each row containing 25 = 100/4
+letters. The ELS for&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shivim.gif" height="10" width="44" align="BOTTOM"> (seventy)
+is the same as shown in <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/figures.html#figure3">Fig. 3</a>.
+The ELS's for&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ayin.gif" height="10" width="15" align="BOTTOM"> (The
+Seventy Descendants of Noah) and for&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/amim.gif" height="12" width="33" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/ha.gif" height="10" width="11" align="BOTTOM"> (the
+nations) are minimal over the whole text of <i>G</i>.
+
+</p><p><a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table7">Table 7</a>
+gives the va1ues of <i>c</i>(<i>w,w'</i>)
+for each pair from the above list (where <i>w'</i> is&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bneinoah.gif" height="10" width="37" align="BOTTOM">
+(the descendants of Noah), and <i>w </i>is the corresponding expression).
+The total for the 15 pairs is: <i>P</i><sub>1</sub> = 0.0000779, <i>P</i><sub>2</sub>
+= 0.0000377.
+<br>&nbsp;
+
+</p><p><a name="A.3.2"></a><i>A.3.2 Sample B1.</i>
+
+</p><p>"A Treasury of Men's Names" is included as an appendix in Even-Shoshan's
+Hebrew dictionary (Even-Shoshan, 1989). From this appendix we chose all
+the names which are mentioned in the Hebrew Bible (Pentateuch, Prophets
+and Writings) as proper names - as indicated in the Treasury itself - and
+contain 5 to 8 letters.
+
+</p><p>This collection of names is designated as <i>S</i>. Let <i>HA</i> :=
+Hebrew Alphabet (which consists of 22 letters).
+
+</p><p>For every <i>x&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER"></i>
+<i>HA </i>we define
+</p><center><i>W</i>(<i>x</i>) := {<i>w&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER">S
+</i>| <i>w</i> begins with the letter <i>x</i>}.</center>
+
+
+<p>We define 22 sets <i>A</i>(<i>x</i>), <i>x</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER">
+<i>HA</i>, where the elements of each set are the following three expressions:
+</p><ol type="i">
+<li>
+'<i>x</i>'&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bet.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shemb.gif" height="10" width="21" align="BOTTOM">
+(a name beginning with '<i>x</i>')</li>
+
+<li>
+'<i>x</i>'&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bet.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">
+(names beginning with '<i>x</i>')</li>
+
+<li>
+'<i>x</i>'&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bet.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shemat.gif" height="10" width="30" align="BOTTOM">
+(names beginning with '<i>x</i>')</li>
+</ol>
+The plural form of&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shemb.gif" height="10" width="21" align="BOTTOM">(=name)
+is written in Genesis either as&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shamot.gif" height="10" width="35" align="BOTTOM">,
+or as&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shemat.gif" height="10" width="30" align="BOTTOM">.
+
+<p>Then we define
+</p><center><i>W' </i>(<i>x</i>) := {w'<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER">
+<i>A</i>(<i>x</i>) | <i>w'</i> appears in the text with <i>d'</i> =&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/plus1.gif" height="10" width="11" align="BOTTOM">1}.</center>
+
+
+<p>Now we define
+</p><center><i>H A'</i> := {<i>x&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER">
+HA</i> | <i>W</i> (<i>x</i>)&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/nonull.gif" nosave="" height="14" width="22" align="BOTTOM">
+and <i>W'</i> (<i>x</i>)&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/nonull.gif" height="14" width="22">}.</center>
+
+
+<p>and, for every <i>x,y&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER">
+HA'</i>
+</p><center>Pair <i>B</i>l(<i>x,y</i>) := {(<i>w, w'</i>) | <i>w&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER">W</i>(<i>x</i>),
+<i>w'</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER"><i>W'</i>(y)}.</center>
+
+
+<p>For instance, ('<img src="./Equidistant Letter Sequences in the Book of Genesis_files/aleph.gif" height="11" width="12" align="BOTTOM">'&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/bet.gif" height="10" width="11" align="BOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/shemb.gif" height="10" width="21" align="BOTTOM">,&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/eliezer.gif" height="11" width="48" align="BOTTOM">)&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER">
+<i>Pair B</i>1(<img src="./Equidistant Letter Sequences in the Book of Genesis_files/aleph.gif" height="11" width="12" align="BOTTOM">,<img src="./Equidistant Letter Sequences in the Book of Genesis_files/aleph.gif" height="13" width="12">).
+
+</p><p>The sample is defined by:
+</p><center><i>Sample B</i>1:=&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ueq.gif" height="30" width="35" align="CENTER"><i>Pair
+B</i>l(<i>x,x</i>).</center>
+
+
+<p>For <i>Genesis </i>it contains 457 pairs of expressions.
+
+</p><p>Sample B2 is defined precisely in the same way
+as Sample B1, except that we used 'A Treasury of Women's Names" from the
+same dictionary. For <i>Genesis </i>it contains 38 pairs of expressions.
+
+</p><p><a name="A.3.3"></a><i>A.3.3 The Sample B3.</i>
+<br>Chapter 10 of <i>Genesis </i>contains the names of the seventy descendents
+of Noah's sons: the Semites, the Hamites and the Japhetites
+(see <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table8">Table
+8</a>). Jewish tradition teaches, that these seventy descendents became
+the Seventy Nations, which constitute Humanity. The source for this tradition
+is found in <i>Targum Yonathan</i> (Jonathan's Translation) to <i>Deuteronomy
+</i>32:8 (see Kasher, 1983, p.294). This concept is well known, and is
+found in biblical Encyclopedias under the title "the Table of Nations"
+(see for instance, <i>Encyclopedia Biblica</i>, 1962).
+
+</p><p>Jewish tradition further tells us (Hagra, 1905), that a nation has the
+following four characteristics:
+</p><ol>
+<li>
+its name,</li>
+
+<li>
+its country,</li>
+
+<li>
+its language.</li>
+
+<li>
+its script.</li>
+</ol>
+Sample B3 is constructed on the basis of the "Table of Nations" using these
+four categories. Let us denote
+<center><i>TN</i>:= the Table of Nations</center>
+
+
+<p>For every <i>x</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER"><i>TN
+</i>we define below a set <i>List B</i>3(<i>x</i>) of expressions.
+
+</p><p>For every <i>x,y&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER">TN
+</i>we define
+</p><center><i>Pair B</i>3(<i>x,y</i>) := {(<i>w,y</i>) | <i>w&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER"></i>
+<i>List B</i>3(<i>x</i>) and <i>w </i>has from 5 to 8 letters }.</center>
+
+
+<p>The resulting sample is:
+</p><center><i>Sample B</i>3:=&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ueq1.gif" height="32" width="34" align="CENTER"><i>Pair
+B</i>3 (<i>x,x</i>).</center>
+
+
+<p>Now let us explain how <i>List B3</i>(<i>x</i>) is constructed. Take,
+for example, one of the names in the list--<img src="./Equidistant Letter Sequences in the Book of Genesis_files/canan.gif" height="13" width="31" align="ABSBOTTOM">
+(Canaan - item 18 in <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table8">Table 8</a>):
+</p><ol>
+<li>
+To express the fact that&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/canan.gif" height="13" width="31" align="ABSBOTTOM">
+is a name of a nation, we use the (Biblical) expressions&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/canan.gif" height="13" width="31" align="ABSBOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/am.gif" height="11" width="20" align="BOTTOM">
+(the <i>Nation</i> of Canaan) and&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/cnanim.gif" height="10" width="43" align="BOTTOM">
+(the <i>Canaanites</i>).</li>
+
+<li>
+For the <i>Country</i> of Canaan there is the Biblical expression:<img src="./Equidistant Letter Sequences in the Book of Genesis_files/canan.gif" height="13" width="31" align="ABSBOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/eretz.gif" height="13" width="29" align="ABSBOTTOM">.</li>
+
+<li>
+For the <i>Language</i> of Canaan there is the Biblical expression:<img src="./Equidistant Letter Sequences in the Book of Genesis_files/canan.gif" height="13" width="31" align="ABSBOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sfat.gif" height="10" width="30" align="BOTTOM">.</li>
+
+<li>
+For the <i>Script</i> of Canaan we do not have a Biblical expression like&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/canan.gif" height="13" width="31" align="ABSBOTTOM">&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ktav.gif" height="10" width="27" align="BOTTOM">,
+but it is a Biblical formation.</li>
+</ol>
+In the course of history names of nations and countries changed. In certain
+cases, the Jewish tradition, as expressed by <i>Targum Yonathan</i> to
+<i>Genesis </i>, gives the new names for the nations and countries under
+consideration. We add these new names to the corresponding categories (1)
+and (2). Thus, for example, the new name for Javan (item 4 in
+<a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table8">Table
+8</a>) is&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/mac.gif" height="11" width="51" align="ABSBOTTOM">
+(Macedonia), whereas for Canaan there are no new names.
+
+<p>The same procedure is applied to each name from the Table of Nations.
+For every
+<br><i>x</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER"><i>
+TN</i> List B3 (<i>x</i>) consists of the following expressions:
+</p><ol>
+<li>
+'<i>x</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/am.gif" height="11" width="20" align="BOTTOM">'
+(the nation of <i>x</i>),
+'<img src="./Equidistant Letter Sequences in the Book of Genesis_files/im.gif" height="10" width="16" align="BOTTOM">-<i>x</i>' (the people
+of <i>x</i>), NewNationName(<i>x</i>);</li>
+
+<li>
+'<i>x&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/eretz.gif" height="13" width="29" align="ABSBOTTOM"></i>'
+(the country of <i>x</i>), NewCountryName(<i>x</i>);</li>
+
+<li>
+'<i>x&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sfat.gif" height="10" width="30" align="BOTTOM"></i>'
+(the language of <i>x</i>);</li>
+
+<li>
+'<i>x</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ktav.gif" height="10" width="27" align="BOTTOM">'
+(the script of <i>x</i>).</li>
+</ol>
+In <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table8">Table 8</a> for every name
+<i>x&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER">
+TN </i>the corresponding List B3(<i>x</i>) is given.
+
+<p><i>Remark 1.</i> The expressions '<i>x</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/am.gif" height="11" width="20" align="BOTTOM">',
+'<i>x</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/eretz.gif" height="13" width="29" align="ABSBOTTOM">'<i>
+</i>and '<i>x</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sfat.gif" height="10" width="30" align="BOTTOM">'
+were chosen for categories (1), (2) and (3) because at least for some <i>x</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER"><i>
+TN</i> they appear as Biblical expressions (see the above example of Canaan).
+For category (4) we used '<i>x</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ktav.gif" height="10" width="27" align="BOTTOM">';
+although it does not appear for any <i>x</i>&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/in.gif" height="9" width="11" align="ABSCENTER"><i>
+TN,</i> it is the only Biblical formation suitable for this category.
+
+</p><p><i>Remark 2.</i> Concerning the expressions '<img src="./Equidistant Letter Sequences in the Book of Genesis_files/im.gif" height="10" width="16" align="BOTTOM">-<i>x
+</i>', we are aware of the fact that only valid lingustic formations should
+be used; therefore we use these expressions if, at least, their singular
+form '<img src="./Equidistant Letter Sequences in the Book of Genesis_files/yud.gif" height="10" width="7" align="BOTTOM">-<i>x'</i>
+appears in the Hebrew Bible. For instance, for&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/gmar.gif" height="10" width="24" align="BOTTOM">
+(item 1) we do not take&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/im.gif" height="10" width="16" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/gmar.gif" height="10" width="24" align="BOTTOM">, since the
+expression&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/yud.gif" height="10" width="7" align="BOTTOM"><img src="./Equidistant Letter Sequences in the Book of Genesis_files/gmar.gif" height="10" width="24" align="BOTTOM">
+does not appear in the Hebrew Bible; so we cannot know whether it has any
+meaning at all. The check was done using Even-Shoshan's <i>New Concordance
+of the Bible</i> (Even-Shoshan, 1981).
+
+</p><p><i>Remark 3.</i> In Talmudic Literature we find various new names for
+nations and countries, and we cannot decide in favor of one against the
+other. We preferred to use a single source. The Aramaic translation of
+<i>Genesis </i>that gives the largest number of such new names is <i>Targum
+Yonathan</i>. We used <i>Targum Yonathan</i> as printed in <i>Torah</i>
+<i>Shelemah</i> (Kasher, 1929) (with <i>Torah Shelemah</i>'s corrections
+according to the Ginzburger manuscript and others).
+
+</p><p><i>Targum Yonathan</i> identifies the new name for the country for items
+1 to 15, 17, and 19 to 23 in <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html#table8">Table 8</a>; and
+the new name for the nation for items 24 to 33, and 41 to 44.
+
+</p><p><i>Targum Yonathan</i> is a translation into Aramaic. We need the identification
+of the names, but we do not intend to check whether the Aramaic appears
+non-randomly as ELS's. Thus, where the Hebrew formation exists, we used
+it alone.
+
+</p><p><i>Remark 4.</i> Here, as in Witztum <i>et al</i>. (1994), we used the
+grammatical orthogrophy - <i>ktiv dikduki.</i>
+</p><h5>
+<a name="A.4"></a>A.4 The Permutations.</h5>
+Here we define the permuted samples for B1, B2 and B3.
+
+<p><i>A.4.1 Samples B1 and B2.</i>
+
+</p><p>Let&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM"> be a permutation
+on the set <i>HA'</i>. Then we define the permuted sample
+</p><center><i>Sample B</i>1(<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM">):=&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ueq.gif" height="30" width="35" align="ABSCENTER">
+<i>Pair B</i>1(<i>x,<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM"></i>(<i>x</i>)).</center>
+
+
+<p>The set <i>HA'</i> consists of 12 elements, thus there are 12! different
+permutations. To calculate significance levels, we chose 999,999 random
+permutations&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM"> as
+described in <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.7">Section A.7</a>.
+
+</p><p>For Sample B2 we proceed similarly.
+
+</p><p><i>A.4.2 Sample B3.</i>
+
+</p><p>For a permutation&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM">
+on the set <i>TN</i> we define the permuted sample
+</p><center><i>Sample B</i>3(<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM">)
+:=&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/ueq1.gif" height="32" width="34" align="CENTER"><i>Pair B</i>3(<i>x</i>,<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM">(<i>x</i>)).</center>
+
+
+<p>The set <i>TN </i>consists of 68 different elements (the names&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sheba.gif" height="10" width="31" align="BOTTOM">and&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/choliah.gif" height="12" width="39" align="BOTTOM">
+appear twice), thus there are 68! different permutations. To calculate
+significance levels, we first chose 999,999 random permutations&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM">
+as described in <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.6">Section A.6</a>. Then we did a new measurement
+which 999,999,999 random permutations, only for statistic <i>P</i><sub>2</sub>.
+</p><h5>
+<a name="A.5"></a>A.5 The Text.</h5>
+We used the standard, generally accepted text of Genesis known as the "Textus
+Receptus." One widely available edition is that of the Koren Publishing
+Company in Jerusalem. The Koren text is precisely the same as that used
+by us.
+<h5>
+<a name="A.6"></a>A.6 The Overall Proximity Measures <i><font size="+0">P</font></i><sub>1</sub>
+and <i><font size="+0">P</font></i><sub>2</sub>.</h5>
+Let <i>N </i>be the number of word pairs (<i>w, w'</i>) in the sample for
+which the corrected distance <i>c</i>(<i>w,w'</i>) is defined (see <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.2">Section
+A.2</a> and <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/#A.3">A.3</a> above). Let <i>k b</i>e the number of
+such word pairs (<i>w,w'</i>) for which <i>c</i>(<i>w, w'</i>)&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/less.gif" height="13" width="10" align="BOTTOM"> 1/5.
+Define <center><img src="./Equidistant Letter Sequences in the Book of Genesis_files/eq3.gif" height="40" width="159"></center>
+
+
+<p>To understand this definition, note that <i>if </i>the <i>c</i>(<i>w,
+w'</i>) were independent random variables that are uniformly distributed
+over [0,1], <i>then</i> <i>P</i><sub>1</sub> would be the probability that
+at least <i>k </i>out of <i>N </i>of them are&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/less.gif" height="13" width="10" align="BOTTOM"> 0.2.
+However, we do <i>not </i>make or use any such assumptions about uniformity
+and independence. Thus <i>P</i><sub>1</sub>, though calibrated in probability
+terms, is simply an ordinal index that measures the number of word pairs
+in a given sample whose words are "pretty close" to each other (i.e. <i>c</i>(<i>w,
+w'</i>)&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/less.gif" height="13" width="10" align="BOTTOM"> 1/5),
+taking into account the size of the whole sample. It enables us to compare
+the overall proximity of the word pairs in different samples; specifically,
+in the samples arising from the different permutations&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pi.gif" height="9" width="11" align="BOTTOM">.
+
+</p><p>The statistic <i>P</i><sub>1</sub> ignores all distances <i>c</i>(<i>w,w'</i>)
+greater than 0.2, and gives equal weight to all distances less than 0.2.
+For a measure that is sensitive to the actual size of the distances, we
+calculate the product&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pimaj.gif" height="14" width="15" align="BOTTOM"><i>c</i>(<i>w,w'</i>)
+over all word pairs (<i>w,w'</i>) in the sample. We then define
+</p><center><i>P</i><sub>2</sub> := <i>F<sup>N</sup></i> (<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pimaj.gif" height="14" width="15" align="BOTTOM"><i>c</i>(<i>w,
+w'</i>)),</center>
+
+
+<p>with <i>N</i> as above, and
+</p><center><img src="./Equidistant Letter Sequences in the Book of Genesis_files/eq4.gif" height="40" width="370"></center>
+
+
+<p>To understand this definition, note first that if <i>x</i><sub>1</sub>,
+<i>x</i><sub>2</sub>, ..., <i>x<sub>N</sub> </i>are independent random
+variables that are uniformly distributed over [O, 1], then the distribution
+of their product <i>X</i> :=<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>...<i>x<sub>N</sub></i>
+is given by Prob(<i>X&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/less.gif" height="13" width="10" align="BOTTOM"> X</i><sub>0</sub>)
+= <i>F</i><sup>N</sup>(<i>X</i><sub>0</sub>); this follows from (3.5) in
+Feller (1966), since the -ln <i>x<sub>i</sub></i> are distributed exponentially,
+and -ln <i>X </i>=&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/sig.gif" height="17" width="20" align="ABSCENTER">(-ln
+<i>x<sub>i</sub></i>). The intuition for <i>P</i><sub>2</sub> is then analogous
+to that for <i>P</i><sub>1</sub>: If the <i>c</i>(<i>w, w'</i>) were independent
+random variables that are uniformly distributed over [0,1], <i>then</i>
+<i>P</i><sub>2</sub> would be the probability that the product&nbsp;<img src="./Equidistant Letter Sequences in the Book of Genesis_files/pimaj.gif" height="14" width="15" align="BOTTOM"><i>c</i>(<i>w,w'</i>)
+is as small as it is, or smaller. But as before, we do not use any such
+uniformity, or independence assumptions. Like <i>P</i><sub>1</sub>, the
+statistic <i>P</i><sub>2</sub> is calibrated in probability terms; but
+rather than thinking of it as a probability, one should think of it simply
+as an ordinal index that enables us to compare the proximity of the words
+in word pairs arising from different permutations.
+</p><h5>
+<a name="A.7"></a>A.7 The Randomizations.</h5>
+The 999,999 random permutations for the three tests were chosen in accordance
+with Algorithm <i>P </i>of Knuth (Knuth: 1969, page 125). The pseudorandom
+generator required as input to this algorithm was that provided by Turbo-Pascal
+5.0 of Borland Inter Inc. We used the same seed as in Witztum <i>et al.</i>
+(1994): 01001 10000 10011 11100 00101 00111 11.
+
+<p>The control text <i>V </i>was constructed by permuting the verses of
+<i>G</i> with a single random permutation, generated like in the previous
+paragraph. In this case, the seed was picked arbitrarily to be the decimal
+integer 10 (i.e., the binary integer 1010).
+
+</p><h2>Acknowledgment.</h2>
+We express our gratitude to Yaakov Rosenberg who prepared the software
+for the permutation test.
+
+<p>We thank Mr. Bernard Goldstein of London and Mr. Yaakov Aharonov of
+Bnei Brak for their help with computer facilities.
+
+</p><p>We express our sincere gratitude to Mishmereth Stam (Bnei Brak) for
+the text of the Book of Genesis on a disc.
+
+</p><p>We wish to express our thanks to Dr. Shalom Srebrenik for helpful discussions
+and valuable suggestions.
+
+</p><p>We thank Yaakov Orbach for help on linguistic matters.
+
+</p><h2>REFERENCES</h2>
+
+<ol>
+<li>Cordovero, M. (1592) <i>Pardes Rimmonim</i>, Cracow.</li>
+
+<li><i>Encyclopledia Biblica</i> (1962), Jerusalem: Bialik Institute.</li>
+
+<li>Even-Shoshan, A. (1981) <i>A New Concordance of the Bible</i>, Jerusalem:
+Kiriath Sefer.</li>
+
+<li>Even-Shoshan, A. (1989) <i>A New Dictionary of the Hebrew Language</i>,
+Jerusalem: Kiriath Sefer.</li>
+
+<li>Feller, W. (1966) <i>An Introduction to Probability Theory and Its
+Applications</i>, 2, New York: Wiley.</li>
+
+<li>Hagra, (1905) <i>A Commentary to the Book of Job</i>, Jerusalem.</li>
+
+<li>Kasher, M. M. (1929) <i>Torah Shelemah. Talmud-Midrashic Encyclopedia
+on the Pentateuch</i>, 1, Jerusalem: Beth Torah Shelemah.</li>
+
+<li>Kasher, M. M. (1953) <i>Torah Shelemah. Talmud-Midrashic Encyclopedia
+on the Pentateuch</i>, 35, Jerusalem: Beth Torah Shelemah. </li>
+
+<li>Knuth, D. E. (1969) <i>The Art of Computer Programming</i>, 2, Reading:
+Addison-Wesley.</li>
+
+<li>Rabbenu Bahya, (1492) <i>A Commentary on the Pentateuch</i>, Naples.</li>
+
+<li>Weissmandel, H. M. D. (1958) <i>Torath Hemed</i>. Mt. Kisco: Yeshivath
+Mt. Kisco.</li>
+
+<li>Witztum, D., Rips. E. and Rosenberg, Y. (1994) Equidistant Letter Sequences
+in the Book of Genesis. <i>Stat. Science</i>, 9, No 3, 429 - 438.</li>
+</ol>
+
+<hr size="3">
+
+<a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/figures.html">Figures</a> &nbsp;&nbsp; <a href="http://cs.anu.edu.au/~bdm/dilugim/Nations/WRR2/tables.html">Tables</a>
+
+
+</body></html>
